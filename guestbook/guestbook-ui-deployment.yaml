@@ -2,8 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui
-spec:
-  replicas: 2
+spec: # Hey replicas are handle now by HPA folks !
   revisionHistoryLimit: 3
   selector:
     matchLabels:
